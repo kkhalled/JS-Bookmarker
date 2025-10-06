@@ -1,0 +1,105 @@
+/* global */
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.righteous-regular {
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #f7ecde;
+    font-family: "PT Sans Caption", sans-serif;
+    
+}
+body::selection {
+  background: #ffb743;
+  
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+/*  */
+
+.container h1 {
+  font-size: 3.125rem;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  z-index: 2;
+  
+}
+.container h1::before {
+  content: "";
+  width: 100%;
+  height: 30%;
+  display: inline-block;
+  background-color: rgba(245, 182, 80, 0.9);
+  position: absolute;
+  bottom: 10px;
+  
+  z-index: -1;
+  transition: height   0.5s ;
+}
+
+.container h1:hover::before{
+   content: "";
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+  background-color: rgba(245, 182, 80, 0.9);
+  position: absolute;
+  /* bottom: 10px; */
+  transform: translateY(0%);
+  z-index: -1;
+  
+}
+
+.container .form{
+    border-top: 2px dotted #000000 !important;
+    border-bottom: 2px dotted #000000 !important;
+    margin-block: 50px;
+}
+.container .form h2{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    
+    background-image: linear-gradient(  to right, #3ca55c, #efdc09c3);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 2222;
+}
+.container .form h2::selection{
+     border-color: #d99c39;
+     color: black;
+     /* background-image: none; */
+}
+
+.form .btn-submit{
+   
+   background-color: #d1512d;
+   color: #fff;
+   padding: 7px 50px;
+
+}
+
+ .btn-visit{
+    background-color: #8A9E23 !important;
+    color: #fff;
+}
+.btn-delete{
+    background-color: #D30820 !important;
+    color: #fff;
+}
