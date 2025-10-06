@@ -28,7 +28,7 @@ function display() {
           <th scope="row">${i + 1}</th>
           <td  >${rowsContainer[i].name}</td>
           <td><button class="btn  btn-visit px-3" onClick="openLink(${i})"> <i class="fa-solid fa-eye me-1"></i> Visit</button></td>
-          <td><button class="btn  btn-delete px-3" onClick="deleteRow( ${i} )"> <i class="fa-solid fa-trash me-1"></i> Visit</button></td>
+          <td><button class="btn  btn-delete px-3" onClick="deleteRow( ${i} )"> <i class="fa-solid fa-trash me-1"></i> Delete</button></td>
          </tr>`;
   }
   document.getElementById("tableBody").innerHTML = rows;
