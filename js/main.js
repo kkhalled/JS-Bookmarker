@@ -13,7 +13,7 @@ function addRow() {
     index: rowsContainer.length + 1,
     name: nameInput.value,
     link: linkInput.value,
-    delete: "delete",
+   
   };
   rowsContainer.push(row);
   localStorage.setItem("rows", JSON.stringify(rowsContainer));
