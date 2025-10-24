@@ -31,13 +31,15 @@
       <div class="mb-3">
         <i class="fa-solid fa-bookmark pe-2"></i><label for="exampleFormControlInput1" class="form-label fw-bold ">Site
           Name</label>
-        <input type="text" class="form-control text-warning-emphasis " id="nameInput" placeholder="Bookmark Name">
+        <input type="text" oninput="isSiteNameValid()" class="form-control text-warning-emphasis " id="nameInput" placeholder="Bookmark Name">
       </div>
+      <p class="text-danger d-none" id="nameError">Site name must start with a capital letter and be at least 4 characters long  </p>
       <div class="mb-3">
 
         <i class="fa-solid fa-link pe-1"></i> <label for="exampleFormControlInput1" class="form-label fw-bold">Site
           URL</label>
-        <input type="email" class="form-control" id="linkInput" placeholder="Website URL">
+        <input type="email" oninput="isSiteLinkValid()" class="form-control" id="linkInput" placeholder="Website URL">
+         <p class="text-danger d-none" id="linkError">Enter a valid URL (e.g. https://example.com) </p>
       </div>
 
       <button class="btn mt-4  d-block mx-auto btn-submit" onclick="addRow()">Submit</button>
